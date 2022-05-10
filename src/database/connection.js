@@ -14,7 +14,7 @@ export const connection = new Sequelize(
     // })
 
     // process.env.DATABASE_URL,
-    "postgres://playlist_user:TZeQWTLpei75TmpmfMR0Cs0LnIChk3YZ@dpg-c9t19976d9khfrj6ist0-a.oregon-postgres.render.com/playlist"
+    "postgres://playlist_user:TZeQWTLpei75TmpmfMR0Cs0LnIChk3YZ@dpg-c9t19976d9khfrj6ist0-a.oregon-postgres.render.com/playlist",
     {
         dialect: 'postgres',
         dialectOptions: {
