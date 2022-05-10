@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff5400; 
+    height: 10%;
+    width: 98.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div {
+  list-style: none;
+  display: flex;
+}
+
+.guia {
+  /* text-decoration: none; */
+  color: rgb(26, 23, 23);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.guia:hover{
+  color: white;
+}
+
+ul#header_container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+} 
+
+body{
+  height: 100vh;
+  background: url(/img/fundogif.gif);
+}
+
+main{
+  width: 100%;
+  height: 100%;
+}
+
+div#div-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+#logo{
+width: 200px;
+height: 200px;
+}
+
+div.name_music{
+    background-color: #ff5400;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+} 
+
+div.name_music:hover{
+  background-color: #f5a30a;
+  color: rgb(12, 10, 10);
+}
+
+#logo{
+width: 200px;
+height: 200px;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#form__criar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100%;
+}
+
+label{
+  color: white;
+}
+
+div#tablet{ 
+    background: url(/img/Tablet.png) no-repeat;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+#iframe-detalhes{
+    border-radius: 5px;
+}
+
+table {
+  color: white;
+  margin-top: 4rem;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  gap: 20px; 
+}
+
+  #div-footer{
+    background-color: #ff5400;
+    width: 100vw;
+  }
+
+  footer>div{
+    height: 3rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #div-git{
+    padding-top: 1.5rem;
+    height: 5rem;
+    width: auto;
+    cursor: pointer;
+  }
+
+  /* style mensage confirmation */
+section#message {
+  padding: 1.5rem;
+  background-color: rgb(234, 51, 51);
+  color: #4d0000;
+  position: fixed;
+  /* top: 3rem; */
+  left: 0;
+  right: 0;
+  z-index: 100;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span#close {                
+  font-size: 2rem;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+span#close:hover{
+  color: rgb(255, 0, 0);
+  transform: scale(1.5);
+}

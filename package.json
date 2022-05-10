@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Projeto MVC de um catálogo",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index",
+    "dev": "nodemon index"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,16 @@
   "bugs": {
     "url": "https://github.com/wirlleym/Favorite-playlist/issues"
   },
-  "homepage": "https://github.com/wirlleym/Favorite-playlist#readme"
+  "homepage": "https://github.com/wirlleym/Favorite-playlist#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "pg": "^8.7.3",
+    "sequelize": "^6.19.0"
+  },
+  "keywords": []
 }

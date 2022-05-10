@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet">
+    <title> Detalhes </title>
+</head>
+
+<body> 
+    <%- include('./partials/header.ejs') %>
+    <main class="main__container">
+        <div id="sub__header">
+            <%= musicaDetalhes.nome %>
+        </div>
+        <section id="details_container">
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/<%= musicaDetalhes.iframe %> "
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+
+            <div id="tablet">
+                <table> 
+                    <thead> 
+                        <th colspan="2"> Detalhes </th>
+                    </thead>
+                    <tbody> 
+                        <tr> 
+                            <td> Música </td>
+                            <td> <%= musicaDetalhes.nome %>  </td>
+                        </tr>
+                        <tr> 
+                            <td> Cantor(a) </td>
+                            <td> <%= musicaDetalhes.cantor %>  </td>
+                        </tr>
+                        <tr>
+                            <td> Duração </td>
+                            <td> <%= musicaDetalhes.duracao %> minutos  </td>
+                        </tr> 
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+</body>
+
+</html>

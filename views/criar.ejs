@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="/css/style.css" rel="stylesheet">
+    <title> Monte sua Playlist </title>
+</head>
+
+<body> 
+    <%- include('./partials/header.ejs') %>
+    <main class="main__container">
+        <section id="form__criar">
+            <form method="post" action="/criar">
+                <fieldset>
+                    <legend> Criar Playlist </legend>
+                    <fieldset class="fieldset__data">
+                        <input type="text" name="nome" required/>
+                        <label for="nome"> Nome da Música </label>
+                    </fieldset>
+
+                    <fieldset class="fieldset__data">
+                        <input type="text" name="cantor" required/>
+                        <label for="cantor"> Nome do Cantor </label>
+                    </fieldset>
+
+                    <fieldset class="fieldset__data">
+                        <input type="number" name="duração" required/>
+                        <label for="duração"> Duração </label>
+                    </fieldset>
+
+                    <fieldset class="fieldset__data">
+                        <input type="text" name="iframe" required/>
+                        <label for="iframe"> Código do Vídeo </label>
+                        
+                    </fieldset>
+                    <div id="btn__container">
+                        <button id="btn__submit" type="submit"> Concluir </button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+</body>
+
+</html>
