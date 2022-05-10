@@ -57,7 +57,7 @@ export const getDeletar = async (req, res) => {
 }
 
 export const getCriar = (req, res) => {
-    res.render('criar.ejs', {message})
+    res.render('criar.ejs', {toggle: false})
 }
 
 export const postCriar = async (req, res) => {
@@ -68,8 +68,7 @@ export const postCriar = async (req, res) => {
             res.send('Todos os campos são obrigatórios!')
         } else {
             await musica.create({nome, cantor, duração, iframe})
-            message="Música adicionada com Sucesso!"
-            res.redirect('/')
+            res.render('criar.ejs', {toggle: true})
         }
     }
     catch(error){
@@ -81,7 +80,7 @@ export const getEditar = async (req, res) => {
     try {
         const musicaAtual = await musica.findByPk(req.params.id)
         res.render('editar.ejs', {
-            musicaAtual, message
+            musicaAtual,
         })
     }
     catch(error){

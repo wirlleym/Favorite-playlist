@@ -32,11 +32,12 @@ export const musica = connection.define('musica', {
 })
 
 const initTable = async () => {
-    await musica.sync()
+    try {
+        await musica.sync()
+    }
+    catch(error){
+        return error.message
+    }
 }
 
 initTable()
-
-// database
-// insert into musica (nome, cantor, duração)
-// values ('Os Anjos Te Louvam', 'Eli Soares', 5,11)
